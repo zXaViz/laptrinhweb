@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Thiết lập font mặc định */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    /* Định dạng header */
+    .header {
+        width: 100%;
+        background-color: #f8f9fa;
+        padding: 10px 0;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .header a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    /* Định dạng danh sách người dùng */
+    .user-list {
+        
+        width: 80%;
+        border-collapse: collapse;
+        margin-top: 30px;
+    }
+
+    .user-list th,
+    .user-list td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .user-list th {
+        background-color: #f2f2f2;
+    }
+
+    /* Định dạng footer */
+    .footer {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer a {
+        padding: 5px 10px;
+        margin: 0 5px;
+        text-decoration: none;
+        border: 1px solid #ccc;
+        color: #333;
+    }
+
+    .footer a:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+    h2{
+        
+        margin: 40px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="#">Home</a>
+        <a href="#">|</a>
+        <a href="#">Đăng xuất</a>
+    </div>
+
+    <table class="user-list">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <h2>Danh sách User</h2>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>user1</td>
+                <td>user1@example.com</td>
+                <td><button>Edit</button><button>View</button><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>user2</td>
+                <td>user2@example.com</td>
+                <td><button>Edit</button><button>View</button><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>user3</td>
+                <td>user3@example.com</td>
+                <td><button>Edit</button><button>View</button><button>Delete</button></td>
+            </tr>
+            <!-- Thêm các hàng khác nếu cần -->
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <a href="#">Previous</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Next</a>
+    </div>
+</body>
+
+</html>
